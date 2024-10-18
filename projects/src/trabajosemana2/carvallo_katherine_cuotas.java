@@ -13,6 +13,7 @@ public class carvallo_katherine_cuotas {
     double comisioncuota;
     double seguromensual;
     double cuotames;
+    double cantidadprestamo;
    
     Scanner entrada = new Scanner(System.in);
     
@@ -22,14 +23,20 @@ public class carvallo_katherine_cuotas {
         System.out.println("Ingrese el interes mensual: ");
         interesmensual = entrada.nextDouble();
         
+        System.out.println("Ingrese la cantidad de su prestamo: ");
+        cantidadprestamo = entrada.nextDouble();
+        
         System.out.println("Ingrese la comisión por cuota: ");
         comisioncuota = entrada.nextDouble();
         
         System.out.println("Ingresar porcentaje de seguro mensual: ");
         seguromensual = entrada.nextDouble();
         
-        totalpagar = (meses*((interesmensual/100)+(comisioncuota/100)+(seguromensual/100)));
-        cuotames = (totalpagar/meses);
+        cuotames = cuotames = (cantidadprestamo / meses) 
+                +(cantidadprestamo * interesmensual / 100) + 
+                (cantidadprestamo * seguromensual / 100) + 
+                       comisioncuota;
+        totalpagar = (cuotames*meses);
     
     
     
