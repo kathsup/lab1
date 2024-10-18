@@ -16,5 +16,6 @@ public class carvallo_katherine_ejercicioa {
        System.out.println("el resultado es: "+resul);
    
    
+       
    } 
 }
