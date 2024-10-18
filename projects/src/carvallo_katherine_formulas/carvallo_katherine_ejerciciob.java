@@ -1,13 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package carvallo_katherine_formulas;
 
-/**
- *
- * @author Lenovo
- */
+import java.util.Scanner;
+
 public class carvallo_katherine_ejerciciob {
+    public static void main(String[] args){
     
+    double xdeno,xnomi,ynomi;
+    Scanner entrada = new Scanner(System.in)
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
 }
