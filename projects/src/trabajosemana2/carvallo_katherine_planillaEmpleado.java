@@ -10,11 +10,11 @@ public class carvallo_katherine_planillaEmpleado {
     int horastrabajo;
     double tarifahora,salariosemanal;
     
-    Scanner entrada = new Scanner(System.in);
+    Scanner entrada = new Scanner(System.in).useDelimiter("\n");
     
         System.out.println("----- Boleta del Empleado -------");    
         System.out.println("Ingrese nombre completo: ");
-        nombreempleado = entrada.nextLine();
+        nombreempleado = entrada.next();
         
         System.out.println("Ingrese horas laboradas en el mes: ");
         horastrabajo = entrada.nextInt();
