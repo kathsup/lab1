@@ -1,27 +1,23 @@
 
 package trabajosemana2;
 
-import java.util.Scanner;
+
 
 public class carvallo_katherine_clics {
     public static void main(String[] args){
     
-     double sesenta = 0.30;
-     double cien = 0.25; 
-     double veinte = 0.80;
-     int clics;
-         Scanner entrada = new Scanner(System.in);
+     
+     int clics,resul;
+         
 
      
-        System.out.println("Ingresar cantidad de clics para calcular: ");
-        clics = entrada.nextInt();
+        System.out.println("calcular 180 clics ");
+        clics = (int) ((0.30*60)+(100)+(0.80*20));
+        resul = (int) (clics*0.16);
+        System.out.println("el resultado es: "+resul);
         
-        if (clics<=20){
         
         
-        
-        }
-    
     
     
     
