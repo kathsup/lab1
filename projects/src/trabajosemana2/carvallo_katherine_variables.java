@@ -13,9 +13,16 @@ public class carvallo_katherine_variables {
     Scanner entrada = new Scanner(System.in);
     
         System.out.println("----- Boleta del Empleado -------");    
+        System.out.println("Ingrese nombre completo: ");
+        nombreempleado = entrada.next();
         
+        System.out.println("Ingrese horas laboradas en el mes: ");
+        horastrabajo = entrada.nextInt();
+       
+        System.out.println("Ingrese tarifa por hora: ");
+        tarifahora = entrada.nextDouble();
     
-    
+        salariosemanal = ((horastrabajo/4)*tarifahora);
     
     
         System.out.println("----- Boleta del Empleado -------");
