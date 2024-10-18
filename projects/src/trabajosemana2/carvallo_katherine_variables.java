@@ -14,7 +14,7 @@ public class carvallo_katherine_variables {
     
         System.out.println("----- Boleta del Empleado -------");    
         System.out.println("Ingrese nombre completo: ");
-        nombreempleado = entrada.next();
+        nombreempleado = entrada.nextLine();
         
         System.out.println("Ingrese horas laboradas en el mes: ");
         horastrabajo = entrada.nextInt();
@@ -22,7 +22,7 @@ public class carvallo_katherine_variables {
         System.out.println("Ingrese tarifa por hora: ");
         tarifahora = entrada.nextDouble();
     
-        salariosemanal = ((horastrabajo/4)*tarifahora);
+        salariosemanal = ((horastrabajo*tarifahora)/4);
     
     
         System.out.println("----- Boleta del Empleado -------");
