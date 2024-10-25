@@ -36,7 +36,7 @@ Scanner entrada = new Scanner(System.in);
             System.out.println("Ingresar nota #1: ");
             nota1 = entrada.nextDouble();
             
-           while (nota1<0){
+           while (nota1<0 || nota1>100){
                System.out.println("No se aceptan numero negativos y mayores de 100");
                System.out.println("Ingresar nota #1: ");
                nota1 = entrada.nextDouble();
@@ -46,7 +46,7 @@ Scanner entrada = new Scanner(System.in);
            System.out.println("Ingresar nota #2: ");
             nota2 = entrada.nextDouble();
             
-           while (nota2<0){
+           while (nota2<0 || nota2>100){
                System.out.println("No se aceptan numeros negativos");
                System.out.println("Ingresar nota #2: ");
                nota2 = entrada.nextDouble();
@@ -56,7 +56,7 @@ Scanner entrada = new Scanner(System.in);
            System.out.println("Ingresar nota #3: ");
             nota3 = entrada.nextDouble();
             
-           while (nota3<0){
+           while (nota3<0 || nota3>100){
                System.out.println("No se aceptan numeros negativos");
                System.out.println("Ingresar nota #3: ");
                nota3 = entrada.nextDouble();
@@ -65,7 +65,7 @@ Scanner entrada = new Scanner(System.in);
            System.out.println("Ingresar nota #4: ");
             nota4 = entrada.nextDouble();
             
-           while (nota4<0){
+           while (nota4<0 || nota4>100){
                System.out.println("No se aceptan numeros negativos");
                System.out.println("Ingresar nota #4: ");
                nota4 = entrada.nextDouble();
@@ -126,7 +126,16 @@ Scanner entrada = new Scanner(System.in);
             System.out.println("Nota mayor: "+ mayor );
             System.out.println("Nota menor:" + menor);
 
-
+            
+        case 3: 
+            
+        String fecha; 
+        
+        
+            System.out.println("Ingresar fecha con el formato: día, DD/MM: ");
+            fecha = entrada.nextLine(); 
+            
+          
 
 
 
