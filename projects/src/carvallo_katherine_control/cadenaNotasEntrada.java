@@ -10,7 +10,8 @@ public class cadenaNotasEntrada {
 Scanner entrada = new Scanner(System.in); 
       int opcion;  
       String cadena;
-      double nota1, nota2, nota3, nota4,promedio, notamayor, notamenor ; 
+      double nota1, nota2, nota3, nota4,promedio, notamayor, notamenor, mayor, menor  ; 
+   
         
         
         System.out.println("**Menu**");
@@ -36,7 +37,7 @@ Scanner entrada = new Scanner(System.in);
             nota1 = entrada.nextDouble();
             
            while (nota1<0){
-               System.out.println("No se aceptan numero negativos");
+               System.out.println("No se aceptan numero negativos y mayores de 100");
                System.out.println("Ingresar nota #1: ");
                nota1 = entrada.nextDouble();
            }
@@ -70,26 +71,70 @@ Scanner entrada = new Scanner(System.in);
                nota4 = entrada.nextDouble();
            }
     
-    promedio = (nota1+nota2+nota3+nota4)/4;
+            promedio = (((nota1+nota2+nota3+nota4)/4)*100.00)/100.00;
+    
+            if (nota1>nota2){
+            mayor = nota1;
+            }
+            else{
+            mayor = nota2;
+            }
+            
+            if (nota3>mayor){
+            mayor = nota3;
+            }
+            else {
+            mayor = mayor; 
+            }
+            
+            if (nota4>mayor){
+            mayor = nota4;
+            }
+            else {
+            mayor = mayor; 
+            }
+            
+            
+            
+            
+            
+            //menor
+            if (nota1<nota2){
+            menor = nota1;
+            }
+            else{
+            menor = nota2;
+            }
+            
+            if (nota3<menor){
+            menor = nota3;
+            }
+            else {
+            menor = menor; 
+            }
+            
+            if (nota4<menor){
+            menor = nota4;
+            }
+            else {
+            menor = menor; 
+            }
     
     
     
-    
-    
-    
-    
+            System.out.println("Promedio: "+promedio);
+            System.out.println("Nota mayor: "+ mayor );
+            System.out.println("Nota menor:" + menor);
+
+
+
+
+
+
+        
+        
+
     }
-    
-    
-
-
-
-
-
-
-
-
-
 
 
 
