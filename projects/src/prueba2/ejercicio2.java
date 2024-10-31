@@ -1,13 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package prueba2;
 
-/**
- *
- * @author Lenovo
- */
+import java.util.Scanner;
+
 public class ejercicio2 {
-    
+  public static void main(String[]args){
+
+Scanner entrada = new Scanner(System.in);
+double consumomensual; 
+ 
+
+      for (int i = 0; i < 12; i++) {
+        System.out.println("Ingresar consumo mensual: ");  
+        consumomensual = entrada.nextDouble(); 
+      }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  
 }
