@@ -145,7 +145,11 @@ public class Carvallo_Katherine_Estructura {
                     
                 case 5: 
                     System.out.println("Saliendo...");
-                    System.out.println("");
+                    System.out.println("Has ingresado "+ejercicio1+" veces al ejercicio de palabras alreves");
+                    System.out.println("Has ingresado " + ejercicio2+" veces al ejercicio de numero perfecto");
+                    System.out.println("Has ingresado "+ejercicio3+" veces al ejercicio de Primos");
+                    System.out.println("Has ingresado "+ejercicio4+" veces al ejercicio Votaciones");
+                    System.out.println("Adiós, vuelve pronto!!!");
                     
                     break; 
 
