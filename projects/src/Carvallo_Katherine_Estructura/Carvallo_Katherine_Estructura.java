@@ -9,6 +9,7 @@ public class Carvallo_Katherine_Estructura {
 
         Scanner entrada = new Scanner(System.in).useDelimiter("\n");
         int opcion=0;
+        int ejercicio1 =0, ejercicio2 = 0, ejercicio3 = 0, ejercicio4=0; 
         Random random = new Random();
         //  int naleatorio = random.nextInt(1,100);
         
@@ -20,6 +21,7 @@ public class Carvallo_Katherine_Estructura {
         System.out.println("4. votaciones");
         System.out.println("5. salir ");
         opcion = entrada.nextInt();
+        
 
 
             switch (opcion) {
@@ -35,10 +37,11 @@ public class Carvallo_Katherine_Estructura {
 
                     }
                     System.out.println("\n");
+                    ejercicio1++;
                     break;
 
                 case 2:
-
+                    ejercicio2++;
                     break;
 
                 case 3:
@@ -62,7 +65,7 @@ public class Carvallo_Katherine_Estructura {
                     }
                    
                     System.out.println("Divisores de " + naleatorio + " son: " + divisores.trim().replace(" ", " y "));
-
+                    ejercicio3++; 
                     break;
 
                 case 4:
@@ -104,6 +107,11 @@ public class Carvallo_Katherine_Estructura {
                         if(planilla.equals("AMARILLO")){
                         AMARILLO++;
                         }
+                        else{
+                        if(planilla!="ROJO" && planilla!="AZUL" && planilla !="NEGRO" && planilla!= "AMARILLO"){
+                            System.out.println("Voto nulo ");
+                        }
+                        }
                         
                         }
                         }
@@ -116,7 +124,9 @@ public class Carvallo_Katherine_Estructura {
                     
                    usado = Math.max(AZUL, Math.max(ROJO, Math.max(NEGRO, AMARILLO)));
                    String planillaGanadora = " ";
-                    
+                   
+                   
+                   
                    if (usado == AZUL) {
                    planillaGanadora = "AZUL";
                    } else if (usado == ROJO) {
@@ -130,6 +140,14 @@ public class Carvallo_Katherine_Estructura {
                    System.out.println("La planilla ganadora es: "+planillaGanadora+" con "+ usado+ " votos");
                     System.out.println(" ");
                     
+                    ejercicio4++; 
+                    break; 
+                    
+                case 5: 
+                    System.out.println("Saliendo...");
+                    System.out.println("");
+                    
+                    break; 
 
             }//cierra switch de los ejercicios 
 
