@@ -69,25 +69,66 @@ public class Carvallo_Katherine_Estructura {
                     System.out.println("VOTACIONES");
                     int votantes; 
                     String planilla; 
-                    
+                    int AZUL= 0;
+                    int ROJO= 0;
+                    int NEGRO= 0;
+                    int AMARILLO= 0;
+                    int usado; 
                    
                     
                     System.out.println("Ingresar numero de votantes: ");
                     votantes = entrada.nextInt(); 
+                    System.out.println(" ");
                     
-                    for (int i = 0; i < votantes.length(); i++) {
+                     
+                        
+                    for (int i = 0; i < votantes; i++) {
                      
                         System.out.println("Planillas: \nAZUL\nROJO\nNEGRO\nAMARILLO ");
                         System.out.println("Ingrese la planilla por la cual votara: ");
-                        planilla = entrada.nextLine(); 
+                        planilla = entrada.next().toUpperCase(); 
+                        System.out.println("\n");
                         
-                        if
+                        if (planilla.equals("AZUL")){
+                        AZUL++; 
+                        }
+                        else{
+                        if (planilla.equals("ROJO")){
+                        ROJO++; 
+                        } 
+                        else{
+                        if(planilla.equals("NEGRO")){
+                        NEGRO++;
+                        }
+                        else{
+                        if(planilla.equals("AMARILLO")){
+                        AMARILLO++;
+                        }
+                        
+                        }
+                        }
+                        }
                         
                     }
+                    usado= Math.max(AZUL,Math.max(ROJO, Math.max(NEGRO, AMARILLO)));
                     
                     
                     
+                   usado = Math.max(AZUL, Math.max(ROJO, Math.max(NEGRO, AMARILLO)));
+                   String planillaGanadora = " ";
                     
+                   if (usado == AZUL) {
+                   planillaGanadora = "AZUL";
+                   } else if (usado == ROJO) {
+                   planillaGanadora = "ROJO";
+                   } else if (usado == NEGRO) {
+                   planillaGanadora = "NEGRO";
+                   } else if (usado == AMARILLO) {
+                   planillaGanadora = "AMARILLO";
+                   }
+                    
+                   System.out.println("La planilla ganadora es: "+planillaGanadora+" con "+ usado+ " votos");
+                    System.out.println(" ");
                     
 
             }//cierra switch de los ejercicios 
