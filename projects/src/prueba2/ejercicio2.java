@@ -51,7 +51,7 @@ double enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, oct
       System.out.println("el consumo total es: "+consumototal);
       
       promedio = consumototal/12; 
-      System.out.println("El consumo total es: "+ promedio );
+      System.out.println("El promedio mensual es: "+ promedio );
 
 
 
