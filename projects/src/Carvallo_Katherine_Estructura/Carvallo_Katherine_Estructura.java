@@ -129,7 +129,7 @@ public class Carvallo_Katherine_Estructura {
                         
                     }
                     //cantidad de veces que se repite el más usado 
-                    usado= Math.max(AZUL,Math.max(ROJO, Math.max(NEGRO, AMARILLO)));
+                    //usado= Math.max(AZUL,Math.max(ROJO, Math.max(NEGRO, AMARILLO)));
                     
                     
                     
@@ -137,7 +137,7 @@ public class Carvallo_Katherine_Estructura {
                    String planillaGanadora = " ";
                    
                    
-                   //determinar cual es partido más botado 
+                   //determinar cual es partido más votado 
                    if (usado == AZUL) {
                    planillaGanadora = "AZUL";
                    } else if (usado == ROJO) {
@@ -168,5 +168,5 @@ public class Carvallo_Katherine_Estructura {
 
         }//cierra while de los ejercicios 
 
-    }  //cierra main 
+    }  //cierra main 1
 }//cierra class
