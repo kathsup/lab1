@@ -17,12 +17,10 @@ public class semana5 {
     
     for (int i = 0; i < cantidadVentas; i++) {
     
-        System.out.println("Ingrese el total de cada venta: ");
+        System.out.println("Ingrese el total de venta: "+(i+1));
         total = entrada.nextDouble(); 
         suma = suma+total; 
-        
-        /*int [] total = new int [cantidadVentas]; 
-        System.out.println(total);*/
+         
     }
         System.out.println("el total es: "+suma);
         
