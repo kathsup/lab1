@@ -17,21 +17,37 @@ public class Carvallo_Katherine_E1 {
      switch (opcion){
      
          case 1 : 
-           for (int i = 0; i < 6; i++) {
+            int numeroImpar=1; 
+             System.out.print("cantidad de filas de la piramide:  "); 
+             int filas = entrada.nextInt(); 
+            
+           for (int i = 0; i < (filas+1); i++) {
            for (int j = 0; j < i; j++) {
-               System.out.print("* ");
-           }
-           System.out.println(" ");
+               System.out.print(numeroImpar + " ");
+               numeroImpar += 2;  // Avanza al siguiente número impar
+            }
+
+            System.out.println(); 
        }
    
              break; 
          
          case 2: 
+             int num; 
+             String agregar; 
+             int mayor = 0; 
+             do {
+            System.out.println("Ingrese un numero");
+            num = entrada.nextInt();
+
+            System.out.println("Desea agregar otro numero? (SI/NO)");
+            agregar = entrada.next().toUpperCase();
+            
+            
+
+        } while (!agregar.equals("NO"));
              
-            int num; 
-            
-             System.out.println("Ingresar un numero: ");
-            
+          break; 
         
          case 3: 
              
@@ -102,16 +118,35 @@ public class Carvallo_Katherine_E1 {
                  // int contador=0; 
                  char letra = palabra.charAt(i);
 
-                 if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
-                     contador++;
+                 switch (letra) {
+                     case 'a':
+                         contador++;
+                         break;
+                     case 'e':
+                         contador++;
+                         break;
+                     case 'i':
+                         contador++;
+                         break;
+                     case 'o':
+                         contador++;
+                         break;
+                     case 'u':
+                         contador++;
+                         break;
                  }
+                /* if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+                     contador++;
+                 }*/
                  // System.out.println("CANTIDAD DE VOCALES "+contador);  
              }
              System.out.println("CANTIDAD DE VOCALES " + contador);
              
              break; 
              
-             
+         case 5: 
+             System.out.println("HASTA LUEGO");
+             break; 
              
      }
  
