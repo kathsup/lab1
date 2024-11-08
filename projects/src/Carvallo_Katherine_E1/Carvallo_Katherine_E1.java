@@ -40,7 +40,7 @@ public class Carvallo_Katherine_E1 {
              int NORMAL= 0; 
              String seguir; 
              String caja; 
-             double subtotal, agregarcaja, impuesto, total; 
+             double subtotal, agregarcaja, total; 
              
               // Preguntar por el nombre
         System.out.println("Ingrese su nombre");
@@ -95,6 +95,21 @@ public class Carvallo_Katherine_E1 {
          case 4: 
              System.out.println("caracteres Vocales");
              
+             System.out.println("Ingrese una palabra: ");
+             String palabra = entrada.next();
+             int contador = 0;
+             for (int i = 0; i < palabra.length(); i++) {
+                 // int contador=0; 
+                 char letra = palabra.charAt(i);
+
+                 if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+                     contador++;
+                 }
+                 // System.out.println("CANTIDAD DE VOCALES "+contador);  
+             }
+             System.out.println("CANTIDAD DE VOCALES " + contador);
+             
+             break; 
              
              
              
