@@ -22,13 +22,15 @@ public class carvallo_Katheriine_E1 {
              System.out.print("cantidad de filas de la piramide:  "); 
              int filas = entrada.nextInt(); 
             
-           for (int i = 0; i < (filas+1); i++) {
+           for (int i = 1; i < (filas+1); i++) {
+               int sumafila = 0; 
            for (int j = 0; j < i; j++) {
                System.out.print(numeroImpar + " ");
+               sumafila += numeroImpar;
                numeroImpar += 2;  // Avanza al siguiente número impar
             }
            
-            System.out.print(" = ");
+            System.out.print(" = "+sumafila);
                     
             System.out.println(); 
             
@@ -38,18 +40,33 @@ public class carvallo_Katheriine_E1 {
          
          case 2: 
              int num; 
+             int Cpromedio= 0; 
+             double promedio; 
+             double sumarnum=0; 
              String agregar; 
              int mayor = 0; 
              do {
             System.out.println("Ingrese un numero");
             num = entrada.nextInt();
-
+            Cpromedio ++; 
+            
+            if (num>0){
+            mayor = num; 
+            }
+            
             System.out.println("Desea agregar otro numero? (SI/NO)");
             agregar = entrada.next().toUpperCase();
             
+            sumarnum += num; 
+             
             
 
         } while (!agregar.equals("NO"));
+             
+             promedio = (sumarnum/Cpromedio);
+            
+                 System.out.println("El numero mayor es: "+ mayor);
+                 System.out.println("El promedio ingresado es: "+promedio);
              
           break; 
         
