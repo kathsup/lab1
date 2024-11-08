@@ -18,6 +18,7 @@ public class carvallo_Katheriine_E1 {
      
          case 1 : 
             int numeroImpar=1; 
+            
              System.out.print("cantidad de filas de la piramide:  "); 
              int filas = entrada.nextInt(); 
             
@@ -26,9 +27,11 @@ public class carvallo_Katheriine_E1 {
                System.out.print(numeroImpar + " ");
                numeroImpar += 2;  // Avanza al siguiente número impar
             }
-               System.out.print(" = ");
-               System.out.println(+numeroImpar);      
+           
+            System.out.print(" = ");
+                    
             System.out.println(); 
+            
        }
    
              break; 
