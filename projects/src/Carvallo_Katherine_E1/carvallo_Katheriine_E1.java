@@ -169,6 +169,8 @@ public class carvallo_Katheriine_E1 {
              System.out.println("HASTA LUEGO");
              break; 
              
+         default: 
+             System.out.println("Selección incorrecta");
      }
  
     }
