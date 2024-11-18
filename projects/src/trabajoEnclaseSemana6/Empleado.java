@@ -1,21 +1,21 @@
+
 package trabajoEnclaseSemana6;
 
-public  class empleado {
+
+public class Empleado {
    
-  //atributos
-    
+    //atributos de empleado
     String nombre; 
     double salario; 
     char genero; 
-    int edad; 
-    int antiguedad; 
+    int edad;
 
-    public empleado(String nombre, double salario, char genero, int edad, int antiguedad) {
+    //constructor de empleado
+    public Empleado(String nombre, double salario, char genero, int edad) {
         this.nombre = nombre;
         this.salario = salario;
         this.genero = genero;
         this.edad = edad;
-        this.antiguedad = antiguedad;
     }
     
     
