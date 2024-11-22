@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author Lenovo
  */
 public class xo extends javax.swing.JFrame {
-//public static String turno; 
+ 
     /**
      * Creates new form xo
      */
@@ -375,22 +375,22 @@ public class xo extends javax.swing.JFrame {
      */
     
         public static String comprobarganador(JLabel[][]lbs){
-        // Verificar filas (horizontal)
-          // Verificar filas (horizontal)
+        
+          // Verificar filas horizontal
     for (int i = 0; i < 3; i++) {
         if (lbs[i][0].getText().equals(lbs[i][1].getText()) && 
             lbs[i][1].getText().equals(lbs[i][2].getText()) && 
             !lbs[i][0].getText().equals("")) {
-            return lbs[i][0].getText(); // Ganador en la fila
+            return lbs[i][0].getText(); 
         }
     }
 
-    // Verificar columnas (vertical)
+    // Verificar columnas vertical
     for (int i = 0; i < 3; i++) {
         if (lbs[0][i].getText().equals(lbs[1][i].getText()) && 
             lbs[1][i].getText().equals(lbs[2][i].getText()) && 
             !lbs[0][i].getText().equals("")) {
-            return lbs[0][i].getText(); // Ganador en la columna
+            return lbs[0][i].getText(); 
         }
     }
 
@@ -398,7 +398,7 @@ public class xo extends javax.swing.JFrame {
     if (lbs[0][0].getText().equals(lbs[1][1].getText()) && 
         lbs[1][1].getText().equals(lbs[2][2].getText()) && 
         !lbs[0][0].getText().equals("")) {
-        return lbs[0][0].getText();// Ganador en la diagonal principal
+        return lbs[0][0].getText();
     }
     
 
@@ -406,7 +406,7 @@ public class xo extends javax.swing.JFrame {
     if (lbs[0][2].getText().equals(lbs[1][1].getText()) && 
         lbs[1][1].getText().equals(lbs[2][0].getText()) && 
         !lbs[0][2].getText().equals("")) {
-       return lbs[0][2].getText(); // Ganador en la diagonal inversa
+       return lbs[0][2].getText(); 
     }
 
     // Si no hay ganador, devolver null
@@ -419,11 +419,11 @@ public class xo extends javax.swing.JFrame {
         if (lbs[fila][columna].getText().equals("")) {
             lbs[fila][columna].setText(turno);
             cambiarTurno();
-            //comprobarganador();
+            
             String ganador = comprobarganador(lbs);
             if (!ganador.isEmpty()) {
                 javax.swing.JOptionPane.showMessageDialog(this, "El ganador es: " + ganador + "!");
-                //reiniciarJuego();
+                
             }
             
         }
@@ -439,11 +439,7 @@ public class xo extends javax.swing.JFrame {
         
         letoca.setText("Turno de "+turno);
 }
-   /* public static void jugador(){
-        String jugador1 = JOptionPane.showInputDialog(null, "Jugador 1:", "Entrada de texto", JOptionPane.QUESTION_MESSAGE);
-        String jugador2 = JOptionPane.showInputDialog(null, "Jugador 2:", "Entrada de texto", JOptionPane.QUESTION_MESSAGE);  
-    }
-    */
+   
     
     
     public static void main(String args[]) {
@@ -473,9 +469,9 @@ public class xo extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                //jugador();
+                
                 new xo().setVisible(true);
-                //jugador();
+                
             }
         });
     }
