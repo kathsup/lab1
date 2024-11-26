@@ -29,7 +29,7 @@ public class ejercicio2 {
        switch(opcion){
        
            case 1: 
-               
+               double c= renta*(1-((1+interes)));
                
                break; 
                
